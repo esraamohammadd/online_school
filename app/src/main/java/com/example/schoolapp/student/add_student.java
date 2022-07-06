@@ -35,7 +35,8 @@ public class add_student extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
-        setContentView ( R.layout.activity_add_student ); btn_save = findViewById ( R.id.addstudent_btn_save );
+        setContentView ( R.layout.activity_add_student );
+        btn_save = findViewById ( R.id.addstudent_btn_save );
         et_fullName=findViewById ( R.id.addstudent_et_fullName );
         et_address=findViewById ( R.id.addstudent_et_address );
         et_student_ssn=findViewById ( R.id.addstudent_et_ssn );
