@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.schoolapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolApp"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".student.add_student"
+            android:exported="false" />
+        <activity
+            android:name=".teatcher.add_teacher"
+            android:exported="false" />
+        <activity
+            android:name=".admin.Admin_Home"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".admin.Admin_login"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".admin.main_Admin"
+            android:exported="true"
+            android:label="@string/title_activity_main_admin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splash"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name=".student.student_Home"
+            android:exported="false" />
+        <activity
+            android:name=".teatcher.Teatcher_Home"
+            android:exported="false" />
+
+            <activity
+                android:name=".user_Login"
+                android:exported="false" />
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

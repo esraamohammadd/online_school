@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#C3F4EE">
+
+        <TextView
+            android:id="@+id/student_layout_tv_parentPh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_layout_tv_ph"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/textView8"
+            android:text="011543275"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView6"
+            android:layout_alignStart="@id/student_layout_tv_name"
+            android:layout_marginTop="10dp"
+            android:text="parent phone  No :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/student_layout_tv_ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_layout_tv_sub"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/textView6"
+            android:text="011543275"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_layout_tv_sub"
+            android:layout_alignStart="@id/student_layout_tv_name"
+            android:layout_marginTop="10dp"
+            android:text="student phone No :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/student_layout_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_color="#8ED6C2"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/student_layout_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toStartOf="@id/student_layout_btn_edit"
+            android:layout_toEndOf="@id/student_layout_img"
+            android:text="Ahmad hamed"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/student_layout_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/student_layout_tv_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="#C3F4EE"
+            android:contentDescription="@string/btn_edit"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/student_layout_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_layout_btn_edit"
+            android:layout_alignEnd="@id/student_layout_btn_edit"
+            android:layout_marginTop="10dp"
+            android:background="#C3F4EE"
+            android:contentDescription="@string/btn_del"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/student_layout_tv_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_layout_tv_name"
+            android:layout_alignStart="@id/student_layout_tv_name"
+            android:layout_marginTop="10dp"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/student_layout_c_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/student_layout_tv_sub"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/student_layout_tv_sub"
+            android:text="pre_1"
+            android:textSize="18sp" />
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/profile_image"-->
+<!--            android:layout_width="96dp"-->
+<!--            android:layout_height="96dp"-->
+<!--            android:src="@drawable/common_full_open_on_phone"-->
+<!--            app:civ_border_color="#FF000000"-->
+<!--            app:civ_border_width="2dp" />-->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_primary90">
+
+        <TextView
+            android:id="@+id/teach_layout_tv_ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teach_layout_tv_c3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/textView6"
+            android:text="011543275"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teach_layout_tv_c3"
+            android:layout_alignStart="@id/teach_layout_tv_name"
+            android:layout_marginTop="10dp"
+            android:text="phone No :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/teach_layout_tv_c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/teach_layout_tv_sub"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/teach_layout_tv_c2"
+            android:text="pre_3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/teach_layout_tv_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/teach_layout_tv_sub"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/teach_layout_c_1"
+            android:text="pre_2"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teach_layout_img"
+            android:layout_width="70dp"
+            android:layout_height="53dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/teach_layout_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_toStartOf="@id/teach_layout_btn_edit"
+            android:layout_toEndOf="@id/teach_layout_img"
+            android:text="Ahmad hamed"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/teach_layout_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/teach_layout_tv_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@color/material_dynamic_primary90"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/teach_layout_btn_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teach_layout_btn_edit"
+            android:layout_alignEnd="@id/teach_layout_btn_edit"
+            android:layout_marginTop="10dp"
+            android:background="@color/material_dynamic_primary90"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <TextView
+            android:id="@+id/teach_layout_tv_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teach_layout_tv_name"
+            android:layout_alignStart="@id/teach_layout_tv_name"
+            android:layout_marginTop="10dp"
+            android:text="Arabic"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/teach_layout_c_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/teach_layout_tv_sub"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/teach_layout_tv_sub"
+            android:text="pre_1"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

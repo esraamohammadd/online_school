@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.add_student">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_add_stud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Add new Student"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/addstudent_et_fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="enter your first name"
+            android:minHeight="48dp" />
+
+
+        <EditText
+            android:id="@+id/addstudent_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:digits="1234567890"
+            android:hint="enter the student id"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/addstudent_et_ssn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:digits="1234567890"
+            android:hint="enter the student SSN"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/addstudent_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:digits="1234567890+"
+            android:hint="enter your second name"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/addstudent_et_par_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:digits="1234567890+"
+            android:hint="enter your second name"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/addstudent_et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:hint="enter student address"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/addstudent_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/addstudent_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="enter username"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/addstudent_spiner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:entries="@array/year"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addstudent_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@color/purple_700"
+            android:src="@android:drawable/ic_input_add"
+            app:fabSize="auto"
+            app:rippleColor="@color/purple_700" />
+
+    </LinearLayout>
+
+</ScrollView>
