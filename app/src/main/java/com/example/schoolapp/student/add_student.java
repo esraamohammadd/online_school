@@ -1,9 +1,12 @@
 package com.example.schoolapp.student;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -11,21 +14,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.schoolapp.R;
+import com.example.schoolapp.admin.main_Admin;
 import com.example.schoolapp.pojo.StudentData;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class add_student extends AppCompatActivity {
     EditText et_fullName,et_student_ssn,et_id,et_std_phone,et_parent_phone
             ,et_address,et_password,et_username;
     Spinner spinner_year;
     FloatingActionButton btn_save;
+//    Button btn_update;
     DatabaseReference reference;
     //****List
     List<StudentData> pre_1;
@@ -47,6 +55,26 @@ public class add_student extends AppCompatActivity {
         spinner_year= findViewById ( R.id.addstudent_spiner );
         et_password = findViewById ( R.id.addstudent_et_password );
         et_username = findViewById ( R.id.addstudent_et_username );
+//        btn_update = findViewById(R.id.addstudent_btn_update);
+
+//        btn_update.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Map<String,Object>map = new HashMap<>();
+//                map.put("name",et_fullName.getText().toString());
+//
+//                Intent intent = getIntent();
+//               int possition= intent.getIntExtra("possition_key",-1);
+//                FirebaseDatabase.getInstance().getReference().child("school_Data")
+//                        .child("pre_1").child(possition+"").updateChildren(map).addOnSuccessListener(new OnSuccessListener<Void>() {
+//                            @Override
+//                            public void onSuccess(Void unused) {
+//                                Toast.makeText(add_student.this, "successfull", Toast.LENGTH_SHORT).show();
+//                            }
+//                        });
+//            }
+//        });
+
 
         pre_1 = new ArrayList<>();
         pre_2 = new ArrayList<>();
@@ -107,7 +135,7 @@ public class add_student extends AppCompatActivity {
 
             reference = FirebaseDatabase.getInstance().getReference().child("school_Data")
                     .child("pre_1");
-            reference.setValue(pre_1).addOnCompleteListener(new OnCompleteListener<Void>() {
+            reference.push().setValue(pre_1).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful())

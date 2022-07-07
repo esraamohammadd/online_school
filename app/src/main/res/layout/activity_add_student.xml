@@ -13,15 +13,19 @@
 
         android:orientation="vertical">
 
+
         <TextView
             android:id="@+id/text_add_stud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:text="Add new Student"
             android:textColor="@android:color/black"
-            android:textSize="30dp" />
+            android:textSize="30dp">
+
+        </TextView>
 
         <EditText
             android:id="@+id/addstudent_et_fullName"
@@ -29,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:hint="enter your first name"
             android:minHeight="48dp" />
 
@@ -39,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:digits="1234567890"
             android:hint="enter the student id"
             android:inputType="number"
@@ -51,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:digits="1234567890"
             android:hint="enter the student SSN"
             android:inputType="number"
@@ -63,8 +70,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:digits="1234567890+"
-            android:hint="enter your second name"
+            android:hint="enter  student phone "
             android:inputType="number"
             android:minHeight="48dp"
             android:singleLine="true" />
@@ -76,8 +84,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:digits="1234567890+"
-            android:hint="enter your second name"
+            android:hint="enter parent phone"
             android:inputType="number"
             android:minHeight="48dp"
             android:singleLine="true" />
@@ -88,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:hint="enter student address"
             android:minHeight="48dp"
             android:singleLine="true" />
@@ -124,7 +134,11 @@
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/input"
+            android:clipToPadding="true"
             android:entries="@array/year"
+            android:padding="5sp"
             tools:ignore="TouchTargetSizeCheck" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -132,8 +146,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
             android:background="@color/purple_700"
             android:src="@android:drawable/ic_input_add"
+            android:tooltipText="save"
             app:fabSize="auto"
             app:rippleColor="@color/purple_700" />
 
